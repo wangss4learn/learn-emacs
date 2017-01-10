@@ -1,0 +1,119 @@
+* Introduction
+** Thank You
+** Intended Audience
+** What You'll learn
+*** What Emacs is about
+*** Getting started with Emacs
+*** Discovering Emacs
+*** Movement
+*** Editing
+*** Productivity
+* The Way of Emacs
+** Guiding Philosophy
+*** LISP?
+    Emacs as an Operating System
+*** Extensibility
+    A speech interface for the blind
+    Remote file editing
+    Shell access
+    ORG mode
+    And much more
+** Important Convertions
+*** The Buffer
+*** The Window and the File
+*** The Point and Mark
+*** Killing, Yanking and CUA
+*** .emacs.d, init.el and .emacs
+*** Major Modes and Minor Modes
+* First Steps
+** Installing Emacs
+*** Checking Emacs's version
+    GNU Emacs
+    XEmacs
+    emacs --version
+    Microsoft Windows, Mac OSX, Linux
+
+** Starting Emacs
+*** Force Emacs to run in a terminal
+    | Switch | Purpose                                                                   |
+    |--------+---------------------------------------------------------------------------|
+    | --help | Display the help                                                          |
+    | -nw    | Forces Emacs to run in terminal mode                                      |
+    | -q     | Do not load an init file (such as init.el)                                |
+    | -Q     | Does not load the site-wide startup file, your init file, nor X resources | 
+ 
+*** Emacs Client-Server
+
+
+** Keys
+*** Escape Meta Alt Control Shift
+    | Modifier | Full Name                    |
+    |----------+------------------------------|
+    | C-       | Control                      |
+    | M-       | Meta("Alt" on most keyboards |
+    | S-       | Shift                        |
+    | s-       | Super(not shift)             |
+    | H-       | Hyper                        |
+    | A-       | Alt(redundant and not used   |
+    |----------+------------------------------|
+
+    complete key
+    prefix key 
+*** Caps Lock as Control
+*** M-x: Execute Extended Command
+*** Universal arguments
+    | Key Binding    | Notes                   |
+    |----------------+-------------------------|
+    | C-u            | Digit arguemnt 4        |
+    | C-u C-u        | Digit argument 16       |
+    | C-u C-u ...    | Digit argument 4的n次方 |
+    | M-0 to M-9     | Digit argument 0 to 9   |
+    | C-0 to C-9     | Digit argument 0 to 9   |
+    | C-M-0 to C-M-9 | Digit argument 0 to 9   |
+    | C--            | Negative arguemnt       |
+    | M--            | Negative argument       |
+    | C-M--          | Negative arguemnt       |
+*** Discovering and Remembering Keys
+    C-x 8 C-h
+
+** Configuring Emacs
+*** Use the Customize interface
+    M-x customize
+*** Evaluating Elisp Code
+    Restart Emacs
+    M-x eval-buffer
+    M-x eval-region
+    C-M-x
+*** The Package Manager
+*** Write elisp
+
+** Getting Help
+*** The Info Manual 
+    | Key     | Purple                                    |
+    |---------+-------------------------------------------|
+    | [ and ] | Previous / next node                      |
+    | l and r | Go back / forward in history              |
+    | n and p | Previous / next sibling node              |
+    | u       | Goes up one level to parent node          |
+    | SPC     | Scroll one screen at a time               |
+    | TAB     | Cycles through cross-references and links |
+    | RET     | Opens the active link                     |
+    | m       | Prompts for a menu item name and opens it |
+    | q       | Closes the info browser                   |
+*** Apropos
+    * M-x apropos 
+    * M-x apropos-command or C-h a 
+    * M-x apropos-document or C-h d 
+    * M-x apropos-library 
+    * M-x apropos-user-option 
+    * M-x apropos-value 
+*** The Describe System
+    * M-x describe-mode Or C-h m 
+    * M-x describe-function Or C-h f 
+    * M-x describe-variable Or C-h v 
+    * M-x describe-key Or C-h k 
+
+* The Theory of Movement
+* The Theory of Editing
+* The Practicals of Emacs
+* Conclusion
